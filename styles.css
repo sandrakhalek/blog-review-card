@@ -1,0 +1,94 @@
+:root {
+    --yellow: rgb(244, 208, 78);
+    --gray-950: rgb(17, 17, 17);
+    --gray-500: rgb(107, 107, 107);
+    --white: rgb(255, 255, 255);
+}
+
+body {
+    background-color: var(--yellow);
+    font-family: "Figtree", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    width: 21em;
+    height: 29.625em;
+    background-color: var(--white);
+    color: var(--gray-950);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+    row-gap: 1.5em;
+    border: 1px solid var(--gray-950);
+    box-shadow: 8px 8px;
+    cursor: pointer;
+}
+
+.card:hover .title {
+    color: var(--yellow);
+}
+
+.illustration {
+    border-radius: 10px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: .75rem;
+}
+
+.text-container .label {
+    background-color: var(--yellow);
+    padding: .25rem 0.75rem;
+    font-size: .875rem;
+    font-weight: 800;
+    line-height: 150%;
+    width: fit-content;
+    border-radius: .25rem;
+}
+
+.text-container .subtitle {
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+h1.title {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+p.description {
+    margin: 0;
+    color: var(--gray-500);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.avatar-conainer {
+    display: flex;
+    column-gap: .75rem;
+    align-items: center;
+    
+}
+
+.avatar-conainer .avatar-img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.avatar-conainer .avatar-name {
+    font-size: .875rem;
+    font-weight: 800;
+    line-height: 150%;
+}
